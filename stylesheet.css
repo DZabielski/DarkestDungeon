@@ -139,10 +139,10 @@ h2{
 .card.cRevealed[data-avatar = "hunter.jpg"]
 {
 	background-image: url(img/hunter.jpg);
-	background-size: cover;
+	
 }
 .card.cRevealed[data-avatar = "templar.jpg"]
 {
 	background-image: url(img/templar.jpg);
-	background-size: cover;
+	
 }
