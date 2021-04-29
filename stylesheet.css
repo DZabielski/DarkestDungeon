@@ -134,7 +134,7 @@ h2{
 .card.cRevealed[data-avatar = "knight.jpg"]
 {
 	background-image: url(img/knight.jpg);
-	background-size: cover;
+	
 }
 .card.cRevealed[data-avatar = "hunter.jpg"]
 {
