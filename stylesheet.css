@@ -1,0 +1,148 @@
+body{
+
+background-image: url(img/backGround.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+header{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+h1{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+#logo{
+    width: 300px;
+    float: left;
+}
+
+.links {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.table{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+}
+
+
+/* state of Cards*/
+.card{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+    margin: 5px;
+    
+    border: 4px solid black;
+	border-radius: 4px;
+    
+    cursor: pointer;
+
+	filter: brightness(70%);
+    transition: all .3s ease-in-out;
+}
+
+.card::before{
+    opacity: 0;
+    background-image: url("img/cover.jpg");
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: opacity .3s ease-in-out;
+}
+
+.card:hover{
+    filter: brightness(100%);
+    border-color: gold;
+}
+
+.revealed{
+    border: 4px solid gold;
+    cursor: default;
+    filter: brightness(100%);
+    
+}
+
+.card:not(.cRevealed)::before {
+
+    opacity: 1;
+}
+
+.card.matched {
+    opacity: 0;
+}
+
+.score {
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+
+
+/* all Cards list in css */
+
+.card.cRevealed[data-avatar = "barbarian.jpg"]
+{
+    background-image: url(img/barbarian.jpg);
+    background-size: cover;    
+
+}
+.card.cRevealed[data-avatar = "bard.jpg"]
+{
+    background-image: url(img/bard.jpg);
+    background-size: cover;
+	
+}
+.card.cRevealed[data-avatar = "captain.jpg"]
+{
+	background-image: url(img/captain.jpg);
+	background-size: cover;
+}
+.card.cRevealed[data-avatar = "doctor.jpg"]
+{
+	background-image: url(img/doctor.jpg);
+	background-size: cover;
+}
+.card.cRevealed[data-avatar = "guru.jpg"]
+{
+	background-image: url(img/guru.jpg);
+	background-size: cover;
+}
+.card.cRevealed[data-avatar = "knight.jpg"]
+{
+	background-image: url(img/knight.jpg);
+	background-size: cover;
+}
+.card.cRevealed[data-avatar = "hunter.jpg"]
+{
+	background-image: url(img/hunter.jpg);
+	background-size: cover;
+}
+.card.cRevealed[data-avatar = "templar.jpg"]
+{
+	background-image: url(img/templar.jpg);
+	background-size: cover;
+}
