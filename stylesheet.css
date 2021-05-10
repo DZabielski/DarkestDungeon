@@ -59,6 +59,7 @@ h2{
     
     cursor: pointer;
 
+    background-size: cover;
 	filter: brightness(70%);
     transition: all .3s ease-in-out;
 }
@@ -89,6 +90,7 @@ h2{
 .card:not(.cRevealed)::before {
 
     opacity: 1;
+    transition: opacity .3s ease-in-out;
 }
 
 .card.matched {
@@ -106,43 +108,33 @@ h2{
 
 .card.cRevealed[data-avatar = "barbarian.jpg"]
 {
-    background-image: url(img/barbarian.jpg);
-    background-size: cover;    
-
+    background-image: url(img/barbarian.jpg); 
 }
 .card.cRevealed[data-avatar = "bard.jpg"]
 {
-    background-image: url(img/bard.jpg);
-    background-size: cover;
-	
+    background-image: url(img/bard.jpg);   	
 }
 .card.cRevealed[data-avatar = "captain.jpg"]
 {
-	background-image: url(img/captain.jpg);
-	background-size: cover;
+	background-image: url(img/captain.jpg);	
 }
 .card.cRevealed[data-avatar = "doctor.jpg"]
 {
-	background-image: url(img/doctor.jpg);
-	background-size: cover;
+	background-image: url(img/doctor.jpg);	
 }
 .card.cRevealed[data-avatar = "guru.jpg"]
 {
-	background-image: url(img/guru.jpg);
-	background-size: cover;
+	background-image: url(img/guru.jpg);	
 }
 .card.cRevealed[data-avatar = "knight.jpg"]
 {
 	background-image: url(img/knight.jpg);
-	
 }
 .card.cRevealed[data-avatar = "hunter.jpg"]
 {
 	background-image: url(img/hunter.jpg);
-	
 }
 .card.cRevealed[data-avatar = "templar.jpg"]
 {
-	background-image: url(img/templar.jpg);
-	
+	background-image: url(img/templar.jpg);	
 }
