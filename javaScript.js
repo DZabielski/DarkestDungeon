@@ -1,6 +1,33 @@
-let allCards = document.querySelectorAll('.card');                      //create list of cards
+var allCards = document.querySelectorAll('.card');                      //create list of cards
 
-                            
+
+function losowanie(element){                                            //fisher's randomizer for our cards 
+
+    for (var i = 0; i < element.length-1; i++){
+        var j = i + Math.random()*(element.length - 1 - i);
+        j = Math.round(j);
+        var x = element[j];
+        element[j]=element[i];
+        element[i] = x; 
+    }
+    return element;
+}
+
+window.onload = function()
+{
+    let cardsList = Array.from(allCards)
+    var losowanieKarty = losowanie (cardsList)    
+    console.log(losowanieKarty)
+    var karty = document.querySelector('.table');
+    karty.innerHTML = '';
+
+    for (var i = 0; i<losowanieKarty.length; i++){
+    karty.appendChild(losowanieKarty[i])
+    }
+
+}; 
+
+
 for(const a1 of allCards){                                              //create listener for event "click"
 	a1.addEventListener('click', revealCard);
 		
