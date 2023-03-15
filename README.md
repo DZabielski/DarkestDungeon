@@ -1,3 +1,3 @@
 # DarkestDungeon
 
-Moja pierwsza gra
+The first code must be a game
